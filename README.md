@@ -48,4 +48,4 @@ O repositório deverá estar devidamente organizado, com controlo de versões (v
 - ✅ Fazer um fork do repositório
 - ✅ gerenciar o código na base do fork feito
 - ✅ Editar o ficheiro README adicionando as especificações do projecto, conforme indicado na sessão de entrega
-- ✅ Fazer um PR para a branch web01 do resultado final para projectos web (backend/middleware) ou mobile01 para projectos mobile
+- ✅ Fazer um PR para a branch nos_web## do resultado final para projectos web (backend/middleware) ou nos_mobile## para projectos mobile
