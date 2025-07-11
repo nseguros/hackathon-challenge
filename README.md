@@ -53,6 +53,7 @@ A arquitetura do projeto segue boas práticas de separação de responsabilidade
  - [x] Tela de calculo da simulação
  - [x] Tela de subscrição
  - [x] Tela de confirmação da subscrição
+ - [x] submeter a solicitação de subscrição no backend
 
 ## ℹ️ Observações Relevantes
 - **Limitações**:
