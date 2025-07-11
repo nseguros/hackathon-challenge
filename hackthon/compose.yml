@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: nossa_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: app_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  storage:
+    image: bitnami/minio:latest
+    container_name: nossa_minio
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    networks:
+      - app-network
+    volumes:
+      - 'minio_data:/data'
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=password
+      - MINIO_DEFAULT_BUCKETS=storage
+
+
+volumes:
+  postgres_data:
+    driver: local
+  minio_data:
+    driver: local
+networks:
+  app-network:
+    driver: bridge

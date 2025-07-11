@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nossa
+  profiles:
+    active: dev
+
+server:
+  port: 9850
+  servlet:
+    context-path: /api/v1
+
+# Logging
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.security: DEBUG
+
+identity:
+  validation: http://consulta.edgarsingui.ao/consultar/
