@@ -774,7 +774,7 @@ class _AutoInsuranceFormScreenState extends State<AutoInsuranceFormScreen>
                                   : theme.colorScheme.outline,
                               icon: _isFormValid
                                   ? const Icon(
-                                      Icons.rocket_launch_rounded,
+                                      Icons.arrow_forward,
                                       color: Colors.white,
                                       size: 20,
                                     )
