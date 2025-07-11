@@ -1,3 +1,5 @@
+![License](https://nossaseguros.ao/assets/img/logo.png)
+
 # 🚀 **Hackathon REVELA-TE!** — NOSSA Seguros 🧠⚡
 
 ![Hackathon Badge](https://img.shields.io/badge/Hackathon-TechStorm2025-blueviolet?style=for-the-badge)
