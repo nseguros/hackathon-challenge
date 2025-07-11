@@ -57,9 +57,4 @@ A arquitetura do projeto segue boas práticas de separação de responsabilidade
 ## ℹ️ Observações Relevantes
 - **Limitações**:
   - Algumas funcionalidades estão pendentes de integração com backend, com exceção da autenticação, que foi implementada com o Supabase, o resto está usando mock de dados.
-- **Funcionalidades não implementadas**:
-  - Notificações push
-  - Pagamento integrado
-  - Perfil de usuário avançado
-- **Sugestões de melhoria**:
 

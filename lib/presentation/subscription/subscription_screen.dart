@@ -6,6 +6,7 @@ import 'package:nossa_seguro_app/services/insurance_service.dart';
 import 'package:action_slider/action_slider.dart';
 import 'package:nossa_seguro_app/shared/custom/modern_widgets.dart';
 import '../../../shared/custom/custom_widgets.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SubscriptionScreen extends StatefulWidget {
   final InsuranceSimulation simulation;
@@ -184,8 +185,15 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
     setState(() => _isLoading = true);
 
     try {
-      // Simulate payment processing
-      await Future.delayed(const Duration(seconds: 3));
+      final supabase = Supabase.instance.client;
+      await supabase.from('subscriptions').insert({
+        'name': _nameController.text.trim(),
+        'nif': _nifController.text.trim(),
+        'phone': _phoneController.text.trim(),
+        'email': _emailController.text.trim(),
+        'payment_method': _paymentMethod,
+        'premium': widget.simulation.premium,
+      });
 
       if (mounted) {
         setState(() {
@@ -196,7 +204,6 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
     } catch (e) {
       if (mounted) {
         setState(() => _isLoading = false);
-
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Erro ao processar subscrição: ${e.toString()}'),
