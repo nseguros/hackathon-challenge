@@ -1,51 +1,62 @@
-# 🚀 **Hackathon REVELA-TE!** — NOSSA Seguros 🧠⚡
+# nossa_seguro_app
 
-![Hackathon Badge](https://img.shields.io/badge/Hackathon-TechStorm2025-blueviolet?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+Aplicativo Flutter para simulação, contratação e gerenciamento de seguros de forma digital e intuitiva.
 
----
+## 📱 Descrição da Solução
+O **nossa_seguro_app** é uma solução mobile desenvolvida em Flutter, focada em facilitar o acesso a produtos de seguro. O app permite ao usuário:
+- Simular diferentes tipos de seguros (auto, vida, etc.)
+- Selecionar e contratar produtos
+- Gerenciar assinaturas e visualizar detalhes das apólices
+- Acompanhar o status das solicitações
+- Realizar login seguro
 
-## 🌟 Sobre o Hackathon
+A arquitetura do projeto segue boas práticas de separação de responsabilidades, com lógica de negócio isolada em controllers e componentes de UI reutilizáveis.
 
-A ***NOSSA Seguros*** reafirma o seu compromisso com a inovação e a transformação digital como pilares fundamentais para o crescimento sustentável e a excelência no atendimento ao cliente. Num mercado cada vez mais competitivo e dinâmico, torna-se imperioso investir em soluções tecnológicas que respondam com agilidade e inteligência às necessidades dos segurados.
+## 🚀 Instruções de Instalação e Execução
 
-Neste contexto, o **Hackathon Revela-te!** surge como uma iniciativa estratégica que visa identificar talentos com competências técnicas sólidas, estimular a criatividade e fomentar a colaboração entre jovens profissionais e a comunidade tecnológica nacional. A realização deste hackathon justifica-se pela necessidade de reforçar a equipa de desenvolvimento tecnológico da NOSSA, ao mesmo tempo que se promove um ambiente propício à geração de ideias inovadoras com aplicabilidade real no sector segurador.
+### Pré-requisitos
+- [Flutter](https://flutter.dev/docs/get-started/install) (versão 3.x ou superior)
+- Android Studio, VS Code ou outro IDE compatível
+- Emulador Android/iOS ou dispositivo físico
 
-Este evento propõe aos participantes um desafio real: criar soluções digitais inovadoras que melhorem a experiência do cliente, optimizem processos internos ou reforcem a segurança digital no sector segurador.
+### Passos para rodar o projeto
+1. Clone o repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd nossa_seguro_app
+   ```
+2. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
+3. Execute a análise de código (opcional, mas recomendado):
+   ```bash
+   flutter analyze
+   ```
+4. Rode o app em um emulador ou dispositivo:
+   ```bash
+   flutter run
+   ```
 
-> ⚙️ *Uma jornada onde o potencial encontra a oportunidade.*
+## 🛠️ Tecnologias Utilizadas
+- **Flutter**: Framework principal para desenvolvimento multiplataforma
+- **Dart**: Linguagem de programação
+- **Provider/Riverpod/BLoC**: Gerenciamento de estado (ajustar conforme implementação)
+- **Arquitetura Limpa**: Separação de camadas (UI, controllers, serviços, modelos)
+- **Integração com APIs REST**: Comunicação com backend para autenticação
 
----
+## Descrição da solução desenvolvida
+ - [x] autenticação do usuário feito com supabase, comprindo os requesitos pedidos
+ - [x] Lista os Produtos disponíveis para simulação
+ - [x] Formulario de simulação, com validação de campos
+ - [x] Tela de confirmação de simulação
+ - [x] Tela de calculo da simulação
+ - [x] Tela de subscrição
+ - [x] Tela de confirmação da subscrição
+ - [x] submeter a solicitação de subscrição no backend
 
-## 🛠️ O Desafio
+## ℹ️ Observações Relevantes
+- **Limitações**:
+  - Algumas funcionalidades estão pendentes de integração com backend, com exceção da autenticação, que foi implementada com o Supabase, o resto está usando mock de dados.
+  - Faltou sincronizar as informações com as tabelas e dados no supabase, porém o backend está funcionando.
 
-O desafio proposto aos participantes do **Hackathon Revela-te!** consiste em desenvolver uma solução digital inovadora que potencialize as interacções dos clientes particulares com a ***NOSSA Seguros***, tornando-as mais rápidas, simples e intuitivas.
-
-Os participantes serão distribuídos em dois grupos, de acordo com a sua especialidade tecnológica:
-
-- Um grupo desenvolverá a solução na vertente web;
-- Outro grupo desenvolverá a solução na vertente mobile.
-
-> Desenvolver o MVP de uma plataforma web ou mobile que permita ao cliente da NOSSA Seguros executar as seguintes funcionalidades obrigatórias com base nos respectivos requisitos no enunciado.
-
-## Entrega do Projecto
-
-As submissões deverão ser feitas através de um repositório no GitHub a ser partilhado pela NOSSA para cada participante.
-
-O que deve ser entregue:
-
-1. Código-fonte completo (frontend e/ou backend);
-2. Ficheiro README.md com:
-    - Instruções de instalação e execução;
-    - Descrição da solução desenvolvida;
-    - Tecnologias utilizadas;
-    - Observações relevantes (ex.: limitações, funcionalidades não implementadas, sugestões de melhoria).
-
-O repositório deverá estar devidamente organizado, com controlo de versões (via Git), e conter apenas os ficheiros essenciais para a execução e avaliação do projecto.
-
-## 🧪 Instruções
-
-- ✅ Fazer um fork do repositório
-- ✅ gerenciar o código na base do fork feito
-- ✅ Editar o ficheiro README adicionando as especificações do projecto, conforme indicado na sessão de entrega
-- ✅ Fazer um PR para a branch com o seu nome.
