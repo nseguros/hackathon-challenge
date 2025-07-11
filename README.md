@@ -1,16 +1,49 @@
-# nossa_seguros
+# Conferente App
 
-A new Flutter project.
 
-## Getting Started
+## Índice
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Configuração do Ambiente](#configuração-do-ambiente)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Visão Geral
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Funcionalidades
+- **Simulação de seguro automóvel:** .
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias Utilizadas
+- **Frontend:** Flutter.
+- **Gerenciamento de Estado:** GETX.
+- **Arquitetura de desenvolvimento:** Clean.
+
+## Configuração do Ambiente
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/nseguros/hackathon-challenge.git
+   cd hackathon-challenge
+   git checkout adolfo_quende
+   ```
+2. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
+3. Rodar
+   ```bash
+   flutter run
+   ```
+4. Build
+
+   ```bash
+   flutter build apk
+   ```
+
+## Observações
+Para teste de autenticação, utilize o seguinte usuário e senha:
+
+   ```bash
+ user: 123456
+pass: senha
+   ```
+
