@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:nossa_seguro_app/app_env.dart';
 import 'package:nossa_seguro_app/core/theme.dart';
 import 'package:nossa_seguro_app/data/models/user_model.dart';
 import 'package:nossa_seguro_app/presentation/auto/auto_insurance_form_screen.dart';
@@ -7,9 +8,14 @@ import 'package:nossa_seguro_app/presentation/login/login_screen.dart';
 import 'package:nossa_seguro_app/presentation/product/product_selection_screen.dart';
 import 'package:nossa_seguro_app/presentation/simulation/simulation_result_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    url: AppEnv.supabaseUrl, // Exemplo: https://seu-projeto.supabase.co
+    anonKey: AppEnv.supabaseApiKey, // Chave pública do Supabase
+  );
   runApp(const MyApp());
 }
 
